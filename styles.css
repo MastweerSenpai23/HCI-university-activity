@@ -1,0 +1,1423 @@
+/* =========================================
+   COLORS AND GENERAL STYLES
+   ========================================= */
+
+:root {
+  --purple: #6624a8;
+  --green: #26734d;
+  --orange: #f2a65a;
+  --cream: #f7f1e7;
+  --text: #24212b;
+  --line: #ded5ca;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 22px;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--text);
+  font: 16px / 1.75 "Poppins", sans-serif;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+p,
+figure {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.22;
+}
+
+h1,
+h2 {
+  font-weight: 500;
+  letter-spacing: -0.045em;
+}
+
+h1 {
+  font-size: clamp(38px, 4.6vw, 66px);
+}
+
+h2 {
+  font-size: clamp(30px, 3vw, 43px);
+}
+
+h3 {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+p + p {
+  margin-top: 14px;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.wrap {
+  width: min(1150px, 88%);
+  margin: auto;
+}
+
+.section {
+  padding: 88px 0;
+}
+
+.eyebrow {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  color: var(--green);
+  margin-bottom: 18px;
+}
+
+
+/* =========================================
+   HEADER AND NAVIGATION
+   ========================================= */
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 23px 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--purple);
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1.1;
+}
+
+.brand small {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 0.25em;
+  margin-top: 7px;
+}
+
+.seal {
+  width: 40px;
+  height: 46px;
+  border: 1px solid var(--purple);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 27px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+nav a {
+  font-size: 12px;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.header-cta {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--purple);
+  text-underline-offset: 5px;
+}
+
+
+/* =========================================
+   HOME BANNER
+   ========================================= */
+
+.hero {
+  width: calc(100% - 32px);
+  max-width: 1600px;
+  margin: auto;
+  min-height: 600px;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 65px 20px;
+}
+
+.hero-bg,
+.hero-shade {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+}
+
+.hero-shade {
+  background: linear-gradient(
+    180deg,
+    #21152d88,
+    #21152db5
+  );
+}
+
+.hero-content {
+  position: relative;
+  color: white;
+  max-width: 950px;
+}
+
+.hero-seal {
+  font-size: 44px;
+  border: 2px solid #f7f1e7aa;
+  border-radius: 50%;
+  width: 78px;
+  height: 86px;
+  margin: 0 auto 24px;
+  display: grid;
+  place-items: center;
+}
+
+.hero .eyebrow {
+  color: var(--orange);
+  font-size: 10px;
+}
+
+.hero-content > p:not(.eyebrow) {
+  margin: 22px 0 28px;
+  font-size: 15px;
+}
+
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+.button {
+  display: inline-block;
+  padding: 13px 22px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    transform 0.2s,
+    background 0.2s;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+
+.purple {
+  background: var(--purple);
+  color: white;
+}
+
+.purple:hover {
+  background: #4f1788;
+}
+
+.orange {
+  background: var(--orange);
+  color: var(--text);
+}
+
+.orange:hover {
+  background: #ffc17d;
+}
+
+
+/* =========================================
+   PROGRAMS
+   ========================================= */
+
+.programs {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 85px;
+  align-items: center;
+}
+
+.program-intro h2 {
+  color: var(--purple);
+  margin-bottom: 24px;
+}
+
+.program-intro > p:not(.eyebrow) {
+  font-size: 15px;
+  color: #635b67;
+  margin-bottom: 28px;
+  max-width: 400px;
+}
+
+.section-number {
+  display: block;
+  margin-top: 50px;
+  font-size: 11px;
+  color: var(--green);
+  letter-spacing: 0.17em;
+}
+
+.program-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding-bottom: 32px;
+}
+
+.program-card {
+  position: relative;
+  height: 230px;
+  overflow: hidden;
+  border-radius: 7px;
+  background: var(--green);
+  color: white;
+  text-decoration: none;
+}
+
+.program-card:nth-child(even) {
+  transform: translateY(32px);
+}
+
+.program-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    transparent 20%,
+    #17121bdd
+  );
+}
+
+.program-card img {
+  height: 100%;
+  transition: transform 0.3s;
+}
+
+.program-card:hover img {
+  transform: scale(1.06);
+}
+
+.program-card > div {
+  position: absolute;
+  bottom: 20px;
+  left: 18px;
+  right: 18px;
+  z-index: 1;
+}
+
+.program-card small {
+  font-size: 8px;
+  letter-spacing: 0.08em;
+}
+
+.program-card h3 {
+  font-size: 17px;
+  margin-top: 5px;
+}
+
+
+/* =========================================
+   ABOUT SECTION ON THE HOMEPAGE
+   ========================================= */
+
+.about-band {
+  background: var(--purple);
+  color: white;
+  padding-top: 64px;
+  position: relative;
+  margin-bottom: 90px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 75px;
+  position: relative;
+  z-index: 1;
+}
+
+.about-band .eyebrow {
+  color: var(--orange);
+}
+
+.about-band h2 {
+  font-size: 38px;
+  margin-bottom: 26px;
+}
+
+.light-link {
+  font-size: 13px;
+  text-underline-offset: 6px;
+}
+
+.about-grid > div > p:not(.eyebrow) {
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.about-grid img {
+  height: 285px;
+  position: relative;
+  margin-bottom: -65px;
+  border-radius: 4px;
+}
+
+.outline-word {
+  font-size: clamp(55px, 8vw, 110px);
+  font-weight: 600;
+  line-height: 1.2;
+  color: transparent;
+  -webkit-text-stroke: 1px #ffffff55;
+  padding: 20px 6% 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+/* =========================================
+   ENROLLMENT AND FEE CARDS
+   ========================================= */
+
+.fees {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 1fr;
+  gap: 24px;
+  padding-top: 25px;
+  align-items: start;
+}
+
+.fees > div {
+  padding-right: 20px;
+}
+
+.fees h2 {
+  color: var(--purple);
+  margin-bottom: 22px;
+}
+
+.fees > div > p:not(.eyebrow) {
+  font-size: 14px;
+  color: #635b67;
+  margin-bottom: 24px;
+}
+
+.fee-card {
+  background: var(--purple);
+  color: white;
+  padding: 30px 25px;
+  border-radius: 5px;
+  min-height: 330px;
+}
+
+.fee-card .eyebrow {
+  color: var(--orange);
+  font-size: 10px;
+}
+
+.fee-card h3 {
+  font-size: 21px;
+}
+
+.fee-card ul {
+  padding-left: 18px;
+  font-size: 13px;
+  line-height: 1.8;
+  margin: 24px 0;
+}
+
+.fee-card li {
+  margin-bottom: 10px;
+}
+
+.fee-card.light {
+  background: #e4e9de;
+  color: var(--text);
+}
+
+.fee-card.light .eyebrow {
+  color: var(--green);
+}
+
+.note {
+  font-size: 11px;
+  border-top: 1px solid #ffffff50;
+  padding-top: 13px;
+}
+
+.light .note {
+  border-color: #b9c8b4;
+}
+
+
+/* =========================================
+   CAMPUS LIFE
+   ========================================= */
+
+.campus-band {
+  background: var(--green);
+  color: white;
+  padding-top: 45px;
+}
+
+.campus-heading {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  padding-bottom: 35px;
+  align-items: start;
+}
+
+.pill {
+  border: 1px solid currentColor;
+  border-radius: 30px;
+  font-size: 11px;
+  padding: 6px 14px;
+  width: fit-content;
+}
+
+.campus-heading p {
+  font-size: 14px;
+  margin-top: 17px;
+  max-width: 590px;
+}
+
+.campus-band > img {
+  height: 350px;
+  object-position: center 57%;
+}
+
+
+/* =========================================
+   SECTION HEADINGS AND SERVICE CARDS
+   ========================================= */
+
+.section-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 25px;
+  margin-bottom: 35px;
+}
+
+.section-head h2 {
+  color: var(--purple);
+}
+
+.section-head > p {
+  font-size: 13px;
+  color: #655a68;
+}
+
+.section-head .eyebrow {
+  margin-bottom: 10px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+.services-grid article {
+  padding: 25px;
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--purple);
+  border-radius: 5px;
+}
+
+.services-grid article:nth-child(2) {
+  border-top-color: var(--green);
+}
+
+.services-grid article:nth-child(3) {
+  border-top-color: var(--orange);
+}
+
+.service-num {
+  display: block;
+  font-size: 12px;
+  color: var(--green);
+  margin-bottom: 22px;
+}
+
+.services-grid h3 {
+  color: var(--purple);
+  margin-bottom: 12px;
+}
+
+.services-grid p {
+  font-size: 14px;
+  color: #615866;
+}
+
+.services-grid details {
+  margin-top: 22px;
+  font-size: 12px;
+}
+
+.services-grid summary {
+  cursor: pointer;
+  color: var(--purple);
+  font-weight: 600;
+  padding: 8px 0;
+}
+
+.services-grid details p {
+  margin-top: 12px;
+  font-size: 13px;
+}
+
+
+/* =========================================
+   ADMISSIONS
+   ========================================= */
+
+.admissions {
+  background: #eee7df;
+}
+
+.center-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.center-heading h2 {
+  color: var(--purple);
+  margin-bottom: 13px;
+}
+
+.center-heading > p:last-child {
+  font-size: 14px;
+  color: #665c68;
+}
+
+.admission-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 980px;
+  margin: auto;
+  align-items: stretch;
+}
+
+.admission-grid > img {
+  height: 100%;
+  min-height: 430px;
+  border-radius: 7px 0 0 7px;
+}
+
+.admission-panel {
+  background: var(--cream);
+  padding: 38px;
+  border: 1px solid var(--line);
+  border-radius: 0 7px 7px 0;
+}
+
+.admission-panel ol {
+  padding-left: 20px;
+  margin: 23px 0;
+}
+
+.admission-panel li {
+  margin-bottom: 17px;
+  font-size: 13px;
+  padding-left: 5px;
+}
+
+.admission-panel li span {
+  display: block;
+  color: #655b6b;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.admission-panel .button {
+  display: block;
+  text-align: center;
+}
+
+.admission-panel > small {
+  display: block;
+  font-size: 10px;
+  margin-top: 13px;
+  color: #655b6b;
+}
+
+
+/* =========================================
+   HOMEPAGE ANNOUNCEMENT CARDS
+   ========================================= */
+
+.events {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.events article {
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.events img {
+  height: 200px;
+}
+
+.events article > div {
+  padding: 23px;
+}
+
+.events .eyebrow {
+  font-size: 9px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.events h3 {
+  font-size: 19px;
+  margin-bottom: 12px;
+}
+
+.events p {
+  font-size: 13px;
+  color: #635967;
+}
+
+
+/* =========================================
+   CONTACT AND FOOTER
+   ========================================= */
+
+.contact-banner {
+  background: var(--purple);
+  color: white;
+  padding: 40px 50px;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+  margin-bottom: 45px;
+}
+
+.contact-banner .eyebrow {
+  color: var(--orange);
+}
+
+.contact-banner h2 {
+  font-size: 34px;
+}
+
+address {
+  font-style: normal;
+  align-self: center;
+  font-size: 13px;
+}
+
+address p + p {
+  margin-top: 8px;
+}
+
+address small {
+  display: block;
+  font-size: 11px;
+  margin-top: 10px;
+  color: #e5cdef;
+}
+
+footer {
+  border-top: 1px solid var(--line);
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+}
+
+footer > div {
+  font-size: 11px;
+  text-align: right;
+  color: #665b6c;
+}
+
+footer small {
+  font-size: 10px;
+}
+
+.source-links {
+  margin-top: 8px;
+}
+
+
+/* =========================================
+   KEYBOARD ACCESSIBILITY
+   ========================================= */
+
+.skip {
+  position: absolute;
+  top: -100px;
+  left: 12px;
+  background: var(--purple);
+  color: white;
+  padding: 10px;
+  z-index: 10;
+}
+
+.skip:focus {
+  top: 10px;
+}
+
+a:focus-visible,
+summary:focus-visible {
+  outline: 3px solid var(--orange);
+  outline-offset: 5px;
+}
+
+.services-grid summary:focus-visible,
+header a:focus-visible {
+  outline-color: var(--green);
+}
+
+
+/* =========================================
+   DESKTOP HEADER POSITION
+   ========================================= */
+
+@media (min-width: 1000px) {
+  .header-inner {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+}
+
+
+/* =========================================
+   TABLET LAYOUT
+   ========================================= */
+
+@media (max-width: 1000px) {
+  .header-inner {
+    flex-wrap: wrap;
+  }
+
+  .brand {
+    order: -1;
+  }
+
+  .header-cta {
+    display: none;
+  }
+
+  .programs {
+    gap: 40px;
+  }
+
+  .about-grid {
+    gap: 40px;
+  }
+
+  .fees {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .fees > div {
+    grid-column: 1 / -1;
+  }
+
+  .services-grid {
+    gap: 14px;
+  }
+
+  .contact-banner {
+    padding: 35px;
+  }
+}
+
+
+/* =========================================
+   PHONE LAYOUT
+   ========================================= */
+
+@media (max-width: 700px) {
+  .wrap {
+    width: 88%;
+  }
+
+  .section {
+    padding: 55px 0;
+  }
+
+  .header-inner {
+    gap: 17px;
+  }
+
+  nav {
+    gap: 14px;
+  }
+
+  nav a {
+    font-size: 11px;
+  }
+
+  .hero {
+    min-height: 520px;
+    width: calc(100% - 20px);
+    padding: 45px 20px;
+  }
+
+  h1 {
+    font-size: 37px;
+  }
+
+  .hero-content > p:not(.eyebrow) {
+    font-size: 13px;
+  }
+
+  .hero-content br {
+    display: none;
+  }
+
+  .hero .eyebrow {
+    font-size: 8px;
+  }
+
+  .programs,
+  .about-grid,
+  .fees,
+  .admission-grid,
+  .contact-banner {
+    grid-template-columns: 1fr;
+  }
+
+  .programs {
+    gap: 30px;
+  }
+
+  .section-number {
+    margin-top: 25px;
+  }
+
+  .program-grid {
+    gap: 12px;
+  }
+
+  .program-card {
+    height: 210px;
+  }
+
+  .program-card h3 {
+    font-size: 14px;
+  }
+
+  .program-card small {
+    font-size: 7px;
+  }
+
+  .program-card > div {
+    left: 13px;
+    right: 13px;
+  }
+
+  .about-band {
+    padding-top: 45px;
+    margin-bottom: 45px;
+  }
+
+  .about-grid {
+    gap: 28px;
+  }
+
+  .about-band h2 {
+    font-size: 32px;
+  }
+
+  .about-grid img {
+    margin-bottom: 0;
+    height: 250px;
+  }
+
+  .outline-word {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 49px;
+  }
+
+  .fees > div {
+    grid-column: auto;
+  }
+
+  .fee-card {
+    min-height: 0;
+  }
+
+  .campus-heading {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .campus-band > img {
+    height: 260px;
+  }
+
+  .section-head {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .services-grid,
+  .events {
+    grid-template-columns: 1fr;
+  }
+
+  .admission-grid > img {
+    height: 270px;
+    min-height: 0;
+    border-radius: 7px 7px 0 0;
+  }
+
+  .admission-panel {
+    padding: 25px;
+    border-radius: 0 0 7px 7px;
+  }
+
+  .events img {
+    height: 240px;
+  }
+
+  .contact-banner {
+    gap: 28px;
+    padding: 30px;
+  }
+
+  .contact-banner h2 {
+    font-size: 30px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  footer > div {
+    text-align: left;
+  }
+}
+
+
+/* Respect visitors who prefer less animation */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  * {
+    transition: none !important;
+  }
+}
+
+
+/* =========================================
+   SHARED STYLES FOR ADDITIONAL PAGES
+   Library, Registrar, Canteen,
+   About, and Announcements
+   ========================================= */
+
+.service-link {
+  display: block;
+  width: fit-content;
+  margin-top: 22px;
+  color: var(--purple);
+  font-size: 14px;
+  font-weight: 600;
+  text-underline-offset: 5px;
+  padding: 6px 0;
+}
+
+.page-intro {
+  background: #ece2f4;
+  padding: 26px 0 54px;
+  border-bottom: 4px solid var(--orange);
+}
+
+.page-intro h1 {
+  color: var(--purple);
+  font-size: clamp(38px, 5vw, 62px);
+}
+
+.page-intro .eyebrow {
+  margin-top: 28px;
+}
+
+.page-lead {
+  max-width: 720px;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #53455d;
+}
+
+
+/* Breadcrumb navigation */
+
+.breadcrumbs {
+  display: flex;
+  gap: 12px;
+  font-size: 14px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.breadcrumbs a {
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+
+/* Links between the three service pages */
+
+.service-tabs {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 25px 0 0;
+}
+
+.service-tabs a {
+  padding: 9px 20px;
+  border: 1px solid var(--purple);
+  border-radius: 30px;
+  text-decoration: none;
+  color: var(--purple);
+  font-size: 15px;
+}
+
+.service-tabs a[aria-current="page"] {
+  background: var(--purple);
+  color: white;
+}
+
+header a[aria-current] {
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 7px;
+}
+
+
+/* Information cards */
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.info-card {
+  padding: 30px;
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--green);
+  border-radius: 7px;
+  background: var(--cream);
+}
+
+.info-card h3 {
+  color: var(--purple);
+  margin-bottom: 15px;
+}
+
+.info-card p {
+  font-size: 16px;
+  color: #5f5665;
+}
+
+
+/* Main content and visit-information sidebar */
+
+.detail-layout {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 60px;
+  align-items: start;
+  padding-bottom: 60px;
+}
+
+.detail-layout h2 {
+  color: var(--purple);
+}
+
+.steps {
+  padding-left: 24px;
+  margin: 28px 0;
+}
+
+.steps li {
+  padding: 0 0 20px 10px;
+}
+
+.steps span {
+  display: block;
+  color: #625968;
+  margin-top: 6px;
+}
+
+.visit-panel {
+  background: #e4e9de;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.visit-panel h3 {
+  color: var(--green);
+}
+
+.visit-panel dt {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.visit-panel dd {
+  margin: 5px 0 0;
+}
+
+.demo-note {
+  font-size: 14px;
+  color: #5f5665;
+  border-top: 1px solid #c9c5bb;
+  padding-top: 20px;
+  margin-top: 25px;
+}
+
+
+/* Expandable questions and answers */
+
+.faq details {
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+}
+
+.faq summary {
+  cursor: pointer;
+  color: var(--purple);
+  font-weight: 600;
+}
+
+.faq details p {
+  padding-top: 15px;
+}
+
+.campus-list {
+  padding-left: 22px;
+}
+
+.campus-list li {
+  margin: 18px 0;
+}
+
+
+/* Contact prompt at the bottom of additional pages */
+
+.next-step {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  background: #ede3f5;
+  border-radius: 10px;
+  padding: 35px;
+  margin-bottom: 60px;
+}
+
+.next-step h2 {
+  color: var(--purple);
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.next-step .button {
+  flex-shrink: 0;
+}
+
+
+/* =========================================
+   ABOUT PAGE
+   ========================================= */
+
+.about-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-page h2 {
+  color: var(--purple);
+  margin-bottom: 25px;
+}
+
+.about-page img {
+  height: 440px;
+  border-radius: 8px 70px 8px 8px;
+}
+
+.values-section {
+  background: var(--green);
+  padding: 50px 0;
+}
+
+
+/* =========================================
+   ANNOUNCEMENTS PAGE
+   ========================================= */
+
+.announcement-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.notice-index {
+  background: #e4e9de;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.notice-index h2 {
+  font-size: 22px;
+  color: var(--green);
+  margin-bottom: 20px;
+}
+
+.notice-index a {
+  display: block;
+  font-size: 15px;
+  margin-top: 15px;
+  text-underline-offset: 4px;
+}
+
+.notice {
+  padding: 32px;
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--purple);
+  border-radius: 7px;
+  margin-bottom: 26px;
+  scroll-margin-top: 25px;
+}
+
+.notice h2 {
+  font-size: 29px;
+  color: var(--purple);
+  margin-bottom: 18px;
+}
+
+.notice-status {
+  display: inline-block;
+  background: #f7dfc3;
+  color: #58380f;
+  padding: 7px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-bottom: 22px;
+}
+
+.notice p {
+  font-size: 16px;
+}
+
+.notice:target {
+  outline: 2px solid var(--purple);
+  outline-offset: 5px;
+}
+
+
+/* =========================================
+   RESPONSIVE ADDITIONAL PAGES
+   ========================================= */
+
+@media (max-width: 760px) {
+  .info-grid,
+  .detail-layout,
+  .about-page,
+  .announcement-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-layout,
+  .about-page,
+  .announcement-layout {
+    gap: 30px;
+  }
+
+  .next-step {
+    flex-direction: column;
+    align-items: start;
+    padding: 25px;
+  }
+
+  .page-lead {
+    font-size: 16px;
+  }
+
+  .page-intro {
+    padding-bottom: 35px;
+  }
+
+  .about-page img {
+    height: 280px;
+  }
+
+  .info-card,
+  .notice {
+    padding: 24px;
+  }
+
+  .service-tabs {
+    gap: 10px;
+  }
+
+  .service-tabs a {
+    padding: 8px 15px;
+  }
+
+  .announcement-layout {
+    padding-top: 35px;
+  }
+}

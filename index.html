@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Verdant University | Find your place. Grow your future.</title>
+
+    <meta
+        name="description"
+        content="A fictional university website concept for HCI Activity. Showcasing the use of HTML and CSS to create a visually appealing and user-friendly interface for prospective students."
+    >
+
+    <!-- Font-Family to be used: Poppins-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+     <link 
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+     rel="stylesheet"
+     >
+
+     <!--Connecting this page to the CSS file-->
+     <link rel="stylesheet" href="styles.css">
+
+     <!-- Small icon displayed in the browser tab-->
+     <link 
+        rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='9' fill='%236624A8'/%3E%3Ctext x='9' y='29' fill='%23F7F1E7' font-size='29' font-family='Georgia'%3EV%3C/text%3E%3C/svg%3E"
+     >
+</head>
+
+<body>
+    <!-- Let the users skip to the main content -->
+    <a class="skip" href="#main">Skip to main content</a>
+
+    <!-- Header Section -->
+     <header>
+        <div class="wrap header-inner">
+
+            <nav aria-label="Main navigation">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#announcements">Announcement</a>
+                <a href="#contact">Contact</a>
+            </nav>
+                
+                <a class="brand" href="#home">
+                    <span class="seal">V</span>
+
+                    <span>
+                        VERDANT
+                        <small>UNIVERSITY</small>
+                    </span>
+                </a>
+
+                <a class="header-cta" href="#admissions">
+                    Explore admissions
+                </a>
+        </div>
+     </header>
+
+     <main id="main">
+
+        <!-- Home banner -->
+        <section class="hero" id="home">
+
+            <img
+                class="hero-bg"
+                src="background.jpg"
+                alt="Campus background"
+                width="1750"
+                height="1000"
+            >
+
+            <div class="hero-shade"></div>
+
+            <div class="hero-content">
+                
+                <div class="hero-seal" aria-hidden="true">V</div>
+
+                <p class="eyebrow">
+                    LEARN WITH PURPOSE. GROW WITH POSSIBILITY.
+                </p>
+
+                <h1>
+                    Your academic journey<br>
+                    starts at Verdant.
+                </h1>
+
+                <p>
+                    A place for curious minds, shared discoveries,<br>
+                    a future you want to create and a community you want to belong to.
+                </p>
+
+                <a class="button orange" href="#programs">
+                    Discover our programs
+                </a>
+            </div>
+         </section>
+
+         <!-- Programs Section -->
+         <section class="section wrap programs" id="programs">
+
+            <div class="program-intro">
+
+                <p class="eyebrow">CHOOSE YOUR PATH</p>
+
+                <h2>
+                    Ideas today.<br>
+                    Possibilities tomorrow.
+                </h2>
+
+                <p>
+                    Explore a field that sparks your curiosity. Our sample study pathways bring creativity, technology, real-world experience, and a global perspective together to help you discover your place in the world.
+                </p>
+
+                <a class="button purple" href="#admissions">
+                    Find your next step
+                </a>
+
+                <span class="section-number" aria-hidden="true">
+                    01 / EXPLORE
+                </span>
+            </div>
+
+            <div class="program-grid">
+                
+                <!-- Program 1 -->
+                <a class="program-card" href="#admissions">
+                    
+                    <img
+                        src="background2.jpg"
+                        alt="Building of the campus"
+                        loading="lazy"
+                    >
+
+                    <div>
+                        <small>BUILD WHAT'S NEW</small>
+                        <h3>Technology &amp; Computing</h3>
+                    </div>
+
+                </a>
+                
+                <!-- Program 2 -->
+                <a class="program-card" href="#admissions">
+                    
+                    <img
+                        src="background3.jpg"
+                        alt="Building of the campus"
+                        loading="lazy"
+                    >
+
+                    <div>
+                        <small>TURN IDEAS INTO REALITY</small>
+                        <h3>Business &amp; Leadership</h3>
+                    </div>
+                </a>
+
+                <!-- Program 3 -->
+                <a class="program-card" href="#admissions">
+                    
+                    <img
+                        src="background4.jpg"
+                        alt="Building of the campus"
+                        loading="lazy"
+                    >
+
+                    <div>
+                        <small>MAKE YOUR MARK</small>
+                        <h3>Arts &amp; Humanities</h3>
+                    </div>
+                </a>
+
+                <!-- Program 4 -->
+                <a class="program-card" href="#admissions">
+                    
+                    <img
+                        src="background5.jpg"
+                        alt="Building of the campus"
+                        loading="lazy"
+                    >
+
+                    <div>
+                        <small>KEEP ASKING QUESTIONS</small>
+                        <h3>SCIENCE &amp; DISCOVERY</h3>
+                    </div>
+                </a>
+
+            </div>
+         </section>
+
+         <!-- ABOUT PREVIEW -->
+         <section class="about-band" id="about">
+
+            <div class="wrap about-grid">
+                
+                <div>
+                    <p class="eyebrow">THE VERDANT STORY</p>
+
+                    <h2>
+                        A university built<br>
+                        around curiosity, creativity,<br>
+                        and community<br>
+                        And around you.
+                    </h2>
+
+                    <a class="light-link" href="#about">
+                        Discover our university
+                    </a>
+                </div>
+
+                <div>
+
+                    <p>
+                        Learning means more when you have a room to explore.
+                        Verdant is a fictional university that puts curiosity, connection, and student experience at the heart of campus life.
+                    </p>
+
+                    <img
+                        src="background6.jpg"
+                        alt="Empty tables and chairs in a classroom"
+                        loading="lazy"
+                    >
+                </div>
+            </div>
+
+            <div class="outline-word" aria-hidden="true">
+                ABOUT VERDANT
+            </div>
+         </section>
+
+         <section class="section wrap fees" id="fees">
+            <div>
+
+                <p class="eyebrow">PLAN YOUR NEXT CHAPTER</p>
+
+                <h2>
+                    A clearer path<br>
+                    to your future.
+                </h2>
+
+                <p>
+                    Understand the question to ask before you start your journey.
+                    Program offering and fee information here are examples for this student concept.
+                </p>
+
+                <a class="button purple" href="#contact">
+                    Ask about enrollment
+                </a>
+            </div>
+
+            <article class="fee-card">
+                
+                <span class="eyebrow">UNDERGRADUATE STUDY</span>
+
+                <h3>Start with the essentials</h3>
+
+                <ul>
+                    <li>Choose your preferred study areas</li>
+                    <li>Review admissions requirements</li>
+                    <li>Prepare your school records</li>
+                    <li>Confirm tuition and payment options</li>
+                </ul>
+
+                <p class="note">
+                    Fees to be confirmed by the university.
+                </p>
+            </article>
+
+            <article class="fee-card light">
+
+                <span class="eyebrow">STUDENT SUPPORT</span>
+
+                <h3>Explore your options.</h3>
+
+                <ul>
+                    <li>Ask about available scholarships</li>
+                    <li>Check eligibility requirements</li>
+                    <li>Review application deadlines</li>
+                    <li>Plan for books and other expenses</li>
+                </ul>
+
+                <p class="note">
+                    Scholarship availability and eligibility to be confirmed by the university.
+                </p>   
+            </article>
+         </section>
+
+         <!-- CAMPUS LIFE -->
+         <section class="campus-band" id="campus">
+
+            <div class="wrap campus-heading">
+
+                <span class="pill">Campus life</span>
+
+                <div>
+
+                    <h2>
+                        Beyond the classroom.<br>
+                        Into your own.
+                    </h2>
+
+                    <p>
+                        Find your friends, your favorite study spot, and a new way to see the world.
+                    </p>
+                </div>
+            </div>
+
+            <img src="images/campus.jpg" alt="Our campus">
+         </section>
+
+         <!-- THREE STUDENT SERVICES -->
+         <section class="section wrap" id="services">
+
+            <div class="section-head">
+
+                <div>
+                    <p class="eyebrow">HERE FOR YOUR EVERYDAY</p>
+                    <h2>Support when you need it.</h2>
+                </div>
+
+                <p>
+                    Three places to explore.<br>
+                    A community ready to help.
+                </p>
+            </div>
+
+            <div class="services-grid">
+
+                <!-- Library card -->
+                 <article>
+                    
+                    <span class="service-num">01</span>
+
+                    <h3>Library</h3>
+
+                    <p>
+                        Find your study spaces, reading materials, and resources for your next ideas, innovation and projects.
+                    </p>
+
+                    <a class="service-link" href="#contact">
+                        Explore library services
+                    </a>
+                 </article>
+
+                 <!-- Registrar card -->
+                  <article>
+
+                    <span class="service-num">02</span>
+
+                    <h3>Registrar</h3>
+
+                    <p>
+                        Get guidance on enrollment, school records and document requests.
+                    </p>
+
+                    <a class="service-link" href="#contact">
+                        Explore registrar services
+                    </a>
+                  </article>
+
+                  <!-- Canteen card -->
+                   <article>
+                    
+                    <span class="service-num">03</span>
+
+                    <h3>Canteen</h3>
+
+                    <p>
+                        Enjoy meals, snacks, and refreshments, or take a break with friends between classes.
+                    </p>
+
+                    <a class="service-link" href="#contact">
+                        Explore canteen services
+                    </a>
+                   </article>       
+            </div>
+          </section>
+
+         <!-- ADMISSIONS -->
+         <section class="admissions section" id="admissions">
+                
+                <div class="wrap">
+                    
+                    <div class="center-heading">
+
+                        <p class="eyebrow">YOUR NEXT CHAPTER</p>
+
+                        <h2>Start your journey.</h2>
+
+                        <p>
+                            A little preparation makes your first step easier.
+                        </p>
+                    </div>
+
+                    <div class="admission-grid">
+
+                        <img
+                            src="background8.jpg"
+                            alt="Stairs"
+                            loading="lazy"
+                        >
+
+                        <div class="admission-panel">
+                            
+                            <span class="eyebrow">ADMISSIONS CHECKLIST</span>
+
+                            <h3>Ready to explore what's next?</h3>
+
+                            <ol>
+
+                                <li>
+                                    <b>Find your field.</b>
+                                    <span>
+                                        Choose a program that matches your interests.
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <b>Prepare your documents</b>
+                                    <span>
+                                        Gather your school records and identification.
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <b>Connect with admissions.</b>
+                                    <span>
+                                        Confirm requirements, dates, and fees.
+                                    </span>
+                                </li>
+                            </ol>
+
+                            <a class="button purple" href="#contact">
+                                Contact admissions
+                            </a>
+
+                            <small>
+                                This concept site does not collect applications
+                            </small>
+                        </div>
+                    </div>
+                </div>
+         </section>
+
+         <!-- ANNOUNCEMENT PREVIEWS -->
+         <section class="section wrap" id="announcements">
+            
+            <div class="section-head">
+
+                <div>
+                    <p class="eyebrow">NEWS &amp; CAMPUS EVENTS</p>
+                    <h2>Coming up at Verdant.</h2>
+                </div>
+
+                <a class="pill" href="#announcements">
+                    View all announcements
+                </a>
+            </div>
+
+            <div class="events">
+
+                <!-- Announcment 1 -->
+                 <article id="enrollment">
+                    
+                    <img
+                        src="background9.jpg"
+                        alt="Corner of the building"
+                        loading="lazy"
+                    >
+
+                    <div>
+
+                        <span class="eyebrow">
+                            ACADEMIC LIFE · DATE TBC
+                        </span>
+
+                        <h3>
+                            <a href="#enrollment">
+                                Getting ready for enrollment
+                            </a>
+                        </h3>
+
+                        <p>
+                            Prepare your documents and watch for the upcoming enrollment schedule.
+                        </p>
+                    </div>
+                 </article>
+
+                 <!-- Announcement 2 -->
+                 <article id="orientation">
+
+                    <img
+                        src="background10.jpg"
+                        alt="School Building"
+                        loading="lazy"
+                    >
+
+                    <div>
+
+                        <span class="eyebrow">
+                            COMMUNITY · DATE TBC
+                        </span>
+
+                        <h3>
+                            <a href="#orientation">
+                                Your first day starts here
+                            </a>
+                        </h3>
+
+                        <p>Meet your campus community and discover the student support available.</p>
+                    </div>
+                 </article>
+
+                 <!-- Announcement 3 -->
+                 <article id="campus-tour">
+
+                    <img
+                        src="background11.jpg"
+                        alt="School building"
+                        loading="lazy"
+                    >
+
+                    <div>
+
+                        <span class="eyebrow">
+                            CAMPUS LIFE · DATE TBC
+                        </span>
+
+                        <h3>
+                            <a href="#campus-tour">
+                                A closer look around campus
+                            </a>
+                        </h3>
+
+                        <p>
+                            Explore learning spaces and find your favorite corner between classes.
+                        </p>
+                    </div>
+                 </article>
+            </div>
+         </section>
+
+         <!-- CONTACT -->
+         <section class ="wrap contact-banner" id="contact">
+            <div>
+
+                <p class="eyebrow">
+                    LET'S TALK ABOUT YOUR FUTURE
+                </p>
+
+                <h2>
+                    Every question is<br>
+                    a good beginning.
+                </h2>
+            </div>
+
+            <address>
+                
+                <p>
+                    <b>Student services &amp; admissions</b>
+                </p>
+
+                <p>Email: verdantuniveristy@verdantnetwork.edu.ph</p>
+
+                <p>
+                    Campus address: Trece Martirez, Cavite<br>
+                    Phone: 423-2354-5643
+                </p>
+
+                <small>
+                    Demonstration contact details only.
+                </small>
+            </address>
+        </section>
+     </main>
+
+     <!-- FOOTER -->
+      <footer class="wrap">
+
+        <a class="brand" href="#home">
+
+            <span class="seal">V</span>
+
+            <span>
+                VERDANT
+                <small>UNIVERSITY</small>
+            </span>
+        </a>
+
+        <div>
+
+            <p>
+                A fictional university · HCI university website concept
+            </p>
+
+            <small>
+                Campus photography:
+
+                <img
+                    src="background3.jpg"
+                    alt="Photo"
+                    loading="lazy"
+                >
+            </small>
+
+            <p class="source-links">
+                <a href="index.html" download>Download HTML</a>
+                ·
+                <a href="styles.css" download>Download CSS</a>
+            </p>
+        </div>
+      </footer>
+    
+</body>
+</html>
