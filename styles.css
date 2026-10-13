@@ -786,6 +786,27 @@ footer small {
   margin-top: 8px;
 }
 
+.site-footer {
+  display: block;
+  padding-bottom: 0;
+}
+
+.footer-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.footer-photo {
+  width: 100%;
+  height: clamp(190px, 32vw, 350px);
+  object-fit: cover;
+  object-position: center;
+}
+
 
 /* =========================================
    KEYBOARD ACCESSIBILITY
